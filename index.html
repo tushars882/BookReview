@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<style>
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  .image{
+    background-image: url('./images/img4.png');
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    position: relative;
+    
+  }
+  .innerImg{
+    /* border: 2px solid white; */
+    
+    width: 600px;
+    height: 600px;
+    background-image: url('./images/img3.jpg');
+    background-size: 600px 600px;
+    position: absolute;
+    top: calc((100vh - 600px) / 2);
+    left: calc((100vw - 600px) / 2);
+    box-shadow: 0px 0px 30px 5px;
+  }
+  .middle{
+    height: 85vh;
+    background-image: url('./images/blurMid.jpg');
+    background-size: cover;
+    
+  }
+  #midImg{
+    float: right;
+    
+  }
+  .seperation{
+    border: 3px solid white ;
+    height: 20px;
+    width: 600px;
+    margin-left: calc((100vw - 600px)/2);
+    top: 714px;
+    border-radius: 8px;
+    position: absolute;
+    background:linear-gradient(to bottom,rgb(202,127,72),rgb(166,97,63))
+
+  }
+  .mid-content{
+    margin-top: 10px;
+  }
+
+  .mid-container{
+    border: 2px solid red;
+    height: 500px;
+    top: 50px;
+    position: relative;
+    width: 800px;
+    margin-left: 50px;
+  }
+  
+  
+  
+
+  
+</style>
+<body>
+  <div class="main border-b-2 relative" >
+    <div class="image ">
+      <div>
+        <ul class="flex space-x-7 text-xl text- ml-8 mt-3 font-serif hover:font-serif text-amber-100 cursor-pointer">
+          <li class="transition ease-in-out delay-100  hover:translate-y-3 ">Home</li>
+          <li class="transition ease-in-out delay-100  hover:translate-y-3">Location</li>
+          <li class="transition ease-in-out delay-100  hover:translate-y-3">About Us</li>
+          <li class="transition ease-in-out delay-100  hover:translate-y-3">Contact Us</li>
+          <li class="transition ease-in-out delay-100  hover:translate-y-3">Services</li>
+        </ul>
+      </div>
+      
+    </div>
+    <div class="innerImg">
+    </div>
+  </div>
+  <div class="seperation "></div>
+
+ <div class="middle">
+   <div class="midImg" id="midImg">
+     <img src="./images/middleImg.jpg" style="border-radius: 0.5rem; margin-right: 4rem; box-shadow: 6px 6px 8px; margin-top: 10px;" alt="" srcset="">
+   </div>
+   
+   <div class="mid-container"></div>
+ </div>
+  
+</body>
+</html>

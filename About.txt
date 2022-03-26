@@ -1,0 +1,12 @@
+-Tailwind Css helps us to wirte css easily within the class using class utility and we are not supposed to make any external file for the css 
+------------------------
+install packages 
+install vite
+--------------vitejs--------------------
+-Vite.js allows developers to set up a development environment for frameworks like Vue and React and even for Vanilla JavaScript app with a dev server. Moreover, it allows the development team to hot reload in just three commands.
+
+we have installed vite and have put it in the package.json file with adding a script{ "start":"vite"}
+
+Here it will create a server which automatically will be reloaded 
+--------------why use postcss----------------------
+- It is a Node. js package developed as a tool to transform all of your CSS using JavaScript, thereby achieving much faster build times than other processors.
